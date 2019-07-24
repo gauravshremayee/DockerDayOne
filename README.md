@@ -28,7 +28,7 @@ richxsl/rhel7                 latest              9c7b3825758a        4 years ag
 
 
 
-#push the image in your docker hub
+#DOCKER PUSH THE IMAGE IN YOUR DOCKER HUB 
 
 $ docker tag centos:latest kumagaur/centos:witty
 $ docker push kumagaur/centos:witty
@@ -43,5 +43,20 @@ $docker rmi image_name
 
 docker rmi centos
 
+
+#DOCKER CREATE NEW IMAGES 
+
+$docker run -dP webdevops/php-nginx
+
+#find the container id from docker ps and exec it 
+
+$docker exec -it  2884e5cac184  /bin/bash
+
+#exec vs run 
+
+
+#docker pause container id to stop the container
+$docker ps
+$docker pause 2884e5cac184
 
 
