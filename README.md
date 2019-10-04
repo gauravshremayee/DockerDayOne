@@ -31,6 +31,8 @@ richxsl/rhel7                 latest              9c7b3825758a        4 years ag
 #DOCKER PUSH THE IMAGE IN YOUR DOCKER HUB 
 
 $ docker tag centos:latest kumagaur/centos:witty
+
+
 $ docker push kumagaur/centos:witty
 The push refers to repository [docker.io/kumagaur/centos]
 d69483a6face: Mounted fro
