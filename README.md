@@ -72,3 +72,6 @@ $docker ps
 $docker pause 2884e5cac184
 
 
+# Expose port 
+$sudo docker run -it -d -p 8082:80 nginx
+$curl http://localhost:8082
